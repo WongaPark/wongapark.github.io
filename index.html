@@ -14,7 +14,8 @@
         body {
             height: 100vh;
             background: url('bg.jpg') no-repeat center center fixed;
-            background-size: cover;
+            background-size: contain;     /* Changed from cover to contain */
+            background-color: black;      /* Black background for the edges */
             font-family: Arial, Helvetica, sans-serif;
             color: white;
             text-align: center;
@@ -28,16 +29,15 @@
         }
 
         h1 {
-            font-size: 5.5rem;
+            font-size: 5rem;
             font-weight: 900;
             text-shadow: 0 4px 15px rgba(0, 0, 0, 0.9);
-            letter-spacing: 8px;
-            line-height: 1.1;
+            letter-spacing: 12px;
+            line-height: 1.05;
         }
 
-        /* Make it responsive on mobile */
         @media (max-width: 768px) {
             h1 {
-                font-size: 3.2rem;
-                letter-spacing: 4px;
+                font-size: 2.8rem;
+                letter-spacing: 6px;
             }
